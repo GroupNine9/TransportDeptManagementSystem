@@ -5,25 +5,31 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="beans.Book"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Booking Form</title>
     </head>
     <body>
         
          <h1>BOOKING</h1>
         <pre>
-        <form> 
+            <jsp:useBean id="book" scope="request" class="beans.Book"></jsp:useBean>
+        <form action="booking.java" method="post"> 
                 
- <label>Department Name</label>              <input type="text" name="uname"/>
+ <label>Destination</label>              <input type="text" name="destination"/>
        
-<label> Booking Date</label>                 <input type="text" name="bkdate"/>
+<label> Departure Date</label>                 <input type="text" name="departuredate"/>
         
-<label>Destination</label>                   <input type="text" name="dst"/>
+<label>Return date</label>                   <input type="text" name="returndate"/>
         
-<label>No. of Passengers</label>             <input type="text" name="pass"/>
+<label>No of Passengers</label>             <input type="text" name="passCount"/>
+
+<label>Duration</label>             <input type="text" name="duration"/>
+
+
         <input type="submit" value="submit"/>
         
     </form>

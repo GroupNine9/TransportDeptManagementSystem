@@ -23,8 +23,11 @@ public class MyDb {
         }
         catch (ClassNotFoundException | SQLException e) 
         {
-            e.printStackTrace();
         }
         return con;
+    }
+
+    public Connection Connection() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
