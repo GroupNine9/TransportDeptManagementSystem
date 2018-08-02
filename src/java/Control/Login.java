@@ -31,11 +31,11 @@ public class Login extends HttpServlet
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     { 
         String PASSWORD = request.getParameter("PASSWORD");
-        String NAME = request.getParameter("NAME");
+        String STAFFID = request.getParameter("STAFFID");
         
         LoginBean loginBean = new LoginBean();
         
-        loginBean.setName(NAME);
+        loginBean.setStaffId(STAFFID);
         loginBean.setPassword(PASSWORD);
         
         LoginDao loginDao = new LoginDao();
@@ -51,18 +51,18 @@ public class Login extends HttpServlet
                 //Create a session
                 HttpSession session = request.getSession();
                 //setting session attribute
-                session.setAttribute("Admin", NAME);
-                request.setAttribute("NAME", NAME);
+                session.setAttribute("Admin", STAFFID);
+                request.setAttribute("STAFFID", STAFFID);
                 
-                request.getRequestDispatcher("/View/admin.jsp").forward(request, response);
+                request.getRequestDispatcher("/View/management.jsp").forward(request, response);
             }
             else if(userValidate.equals("Mechanic"))
             {
                 System.out.println("Mechanic");
                 
                 HttpSession session = request.getSession();
-                session.setAttribute("Mechanic", NAME);
-                request.setAttribute("NAME", NAME);
+                session.setAttribute("Mechanic", STAFFID);
+                request.setAttribute("STAFFID", STAFFID);
                 
                 request.getRequestDispatcher("/View/admin.jsp").forward(request, response);
             }
@@ -71,8 +71,8 @@ public class Login extends HttpServlet
                 System.out.println("School Official");
                 
                 HttpSession session = request.getSession();
-                session.setAttribute("School Official", NAME);
-                request.setAttribute("NAME", NAME);
+                session.setAttribute("School Official", STAFFID);
+                request.setAttribute("STAFFID", STAFFID);
                 
                 request.getRequestDispatcher("/View/admin.jsp").forward(request, response);
             }
@@ -81,10 +81,10 @@ public class Login extends HttpServlet
                 System.out.println("Booking Officer");
                 
                 HttpSession session = request.getSession();
-                session.setAttribute("Booking Officer", NAME);
-                request.setAttribute("NAME", NAME);
+                session.setAttribute("Booking Officer", STAFFID);
+                request.setAttribute("STAFFID", STAFFID);
                 
-                request.getRequestDispatcher("/View/admin.jsp").forward(request, response);
+                request.getRequestDispatcher("/View/booking.jsp").forward(request, response);
             }
             else if(userValidate.equals("Driver"))
             {
@@ -92,8 +92,8 @@ public class Login extends HttpServlet
                 
                 HttpSession session = request.getSession();
                 session.setMaxInactiveInterval(10*60);
-                session.setAttribute("Driver", NAME);
-                request.setAttribute("NAME", NAME);
+                session.setAttribute("Driver", STAFFID);
+                request.setAttribute("STAFFID", STAFFID);
                 
                 request.getRequestDispatcher("/View/Home.jsp").forward(request, response);
             }

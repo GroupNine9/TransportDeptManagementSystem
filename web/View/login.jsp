@@ -14,8 +14,8 @@
             <h2>Egerton Transport System</h2>
             <form action="<%=request.getContextPath() %>/Login" method="post">
                 <div class="inputBox">
-                    <input type="text" name="NAME" required="" >
-                    <label>Name</label>
+                    <input type="text" name="STAFFID" required="" >
+                    <label>Staff Id</label>
                 </div>
                 <div class="inputBox">
                     <input type="password" name="PASSWORD" required="" >

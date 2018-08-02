@@ -17,12 +17,12 @@ public class LoginDao
 {
      public String authenticateUser(LoginBean loginBean)
     {
-        String NAME = loginBean.getName();
+        String STAFFID = loginBean.getStaffId();
         String PASSWORD = loginBean.getPassword();
         
         MyDb db = new MyDb();
         
-        String name = "";
+        String staffid = "";
         String password = "";
         String role = "";
         
@@ -30,23 +30,23 @@ public class LoginDao
         {
             db.getCon();
             Statement statement = db.con.createStatement();
-            ResultSet resultSet = statement.executeQuery("select NAME, PASSWORD, ROLE from staff");
+            ResultSet resultSet = statement.executeQuery("select STAFFID, PASSWORD, ROLE from staff");
             
             while(resultSet.next())
             {
-                name = resultSet.getString("NAME");
+                staffid = resultSet.getString("STAFFID");
                 password = resultSet.getString("PASSWORD");
                 role = resultSet.getString("ROLE");
                 
-                if(NAME.equals(name) && PASSWORD.equals(password) && role.equals("Admin"))
+                if(STAFFID.equals(staffid) && PASSWORD.equals(password) && role.equals("Admin"))
                     return "Admin";
-                else if(NAME.equals(name) && PASSWORD.equals(password) && role.equals("Mechanic"))
+                else if(STAFFID.equals(staffid) && PASSWORD.equals(password) && role.equals("Mechanic"))
                     return "Mechanic";
-                else if(NAME.equals(name) && PASSWORD.equals(password) && role.equals("School Official"))
+                else if(STAFFID.equals(staffid) && PASSWORD.equals(password) && role.equals("School Official"))
                     return "School Official";
-                else if(NAME.equals(name) && PASSWORD.equals(password) && role.equals("Booking Officer"))
+                else if(STAFFID.equals(staffid) && PASSWORD.equals(password) && role.equals("Booking Officer"))
                     return "Booking Officer";
-                else if(NAME.equals(name) && PASSWORD.equals(password) && role.equals("Driver"))
+                else if(STAFFID.equals(staffid) && PASSWORD.equals(password) && role.equals("Driver"))
                     return "Driver";
             }
         }

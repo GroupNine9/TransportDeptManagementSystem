@@ -11,16 +11,16 @@ package Model;
  */
 public class LoginBean 
 {
-     private String NAME;
+     private String STAFFID;
     private String PASSWORD;
     
-    public String getName()
+    public String getStaffId()
     {
-        return NAME;
+        return STAFFID;
     }
-    public void setName(String NAME)
+    public void setStaffId(String STAFFID)
     {
-        this.NAME = NAME;
+        this.STAFFID = STAFFID;
     }
     
      public String getPassword()
