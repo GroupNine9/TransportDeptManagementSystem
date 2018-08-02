@@ -4,6 +4,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <welcome-file-list>
         <welcome-file>View/Home.jsp</welcome-file>
+        </welcome-file-list>
     <servlet>
         <servlet-name>Home</servlet-name>
         <servlet-class>Control.Home</servlet-class>
@@ -12,8 +13,7 @@
         <servlet-name>Home</servlet-name>
         <url-pattern>/Home</url-pattern>
     </servlet-mapping>
-    <servlet>
-       
+    
     <session-config>
         <session-timeout>
             30
