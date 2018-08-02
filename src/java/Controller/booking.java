@@ -8,7 +8,7 @@ package Controller;
 import beans.Book;
 import java.io.IOException;
 import java.io.PrintWriter;
-import static java.lang.System.out;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -52,25 +52,28 @@ public class booking extends HttpServlet {
 
                 book.BookVehicle();
                 
-                out.println("<br>");
-                out.println("<br>");
-                out.println("<center>Great!!!</center>");
-                RequestDispatcher rd = request.getRequestDispatcher("login_form.jsp");
-                rd.forward(request,response);
-            } finally {out.close();}
+               
+               
+            } 
         }
-           
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
-    @Override
-    public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
-            
-}
-    
-
-
+        
+        @Override
+        protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException 
+        {
+            processRequest(request, response);
+        }
+        
+        @Override
+        protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException 
+        {
+            processRequest(request, response);
+        }
+        
+        @Override
+        public String getServletInfo() 
+        {
+            return "Short description";
+        }
+}   

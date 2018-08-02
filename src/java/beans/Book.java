@@ -20,6 +20,19 @@ import java.util.logging.Logger;
  */
 public class Book {
     private String destination,departuredate,returndate,passCount,duration;
+    
+     
+    public Book(){
+        destination="";
+        departuredate="";
+        returndate="";
+        passCount="";
+        duration="";
+        
+               
+                        
+    }
+
 
     public String getPassCount() {
         return passCount;
@@ -35,22 +48,7 @@ public class Book {
 
     public void setDuration(String duration) {
         this.duration = duration;
-    }
-    
- 
-    
-    public Book(){
-        destination="";
-        departuredate="";
-        returndate="";
-        passCount="";
-        duration="";
-        
-               
-                        
-    }
-
-   
+    } 
 
     public String getDestination() {
         return destination;
@@ -86,7 +84,7 @@ public class Book {
             MyDb dbconn=new MyDb();
             Connection myconnection= dbconn.Connection();
 
-            String sqlString="INSERT INTO pending trips (TRIPID,DEPARTURE DATE,RETURN DATE,PASSENGER COUNT,DURATION,DESTINATION) VALUES ('"+destination+"','"+departuredate+"','"+returndate+"','"+passCount+"','"+duration+"')";
+            String sqlString="INSERT INTO pending trips (DEPARTURE DATE,RETURN DATE,PASSENGER COUNT,DURATION,DESTINATION) VALUES ('"+destination+"','"+departuredate+"','"+returndate+"','"+passCount+"','"+duration+"')";
             
             Statement myStatement = myconnection.createStatement();
             

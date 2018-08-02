@@ -15,17 +15,17 @@
     <body>
         
          <h1>BOOKING</h1>
-        <pre>
+        
             <jsp:useBean id="book" scope="request" class="beans.Book"></jsp:useBean>
-        <form action="booking.java" method="post"> 
+        <form action="booking" method="post"> 
                 
- <label>Destination</label>              <input type="text" name="destination"/>
+            <label>Destination</label>              <input type="text" name="destination"/>
        
-<label> Departure Date</label>                 <input type="text" name="departuredate"/>
+            <label> Departure Date</label>                 <input type="text" name="departuredate"/>
         
-<label>Return date</label>                   <input type="text" name="returndate"/>
-        
-<label>No of Passengers</label>             <input type="text" name="passCount"/>
+            <label>Return date</label>                   <input type="text" name="returndate"/>
+                    
+            <label>No of Passengers</label>             <input type="text" name="passCount"/>
 
 <label>Duration</label>             <input type="text" name="duration"/>
 
@@ -33,6 +33,6 @@
         <input type="submit" value="submit"/>
         
     </form>
-        </pre>
+       
     </body>
 </html>
