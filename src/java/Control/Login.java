@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Control;
 
 import Model.LoginBean;
@@ -114,23 +110,6 @@ public class Login extends HttpServlet
         {
             e1.printStackTrace();
         }
-     
+     //End of doPost()
     }
-   
-   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
-    {
-        //Fetch session object
-        HttpSession session = request.getSession(false);
-        
-        //If sesson is not nul
-        if(session != null)
-        {
-            //remove all session attribute bound to the session
-            session.invalidate();
-            request.setAttribute("errMessage", "You have logged out successfully");
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("/View/Home.jsp");
-            requestDispatcher.forward(request, response);
-            System.out.println("Logged out");
-        }
-}
 }

@@ -20,6 +20,7 @@ public class LoginDao
         String STAFFID = loginBean.getStaffId();
         String PASSWORD = loginBean.getPassword();
         
+        //Calling class MyDb 
         MyDb db = new MyDb();
         
         String staffid = "";

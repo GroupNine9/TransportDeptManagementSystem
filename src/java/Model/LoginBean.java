@@ -31,5 +31,4 @@ public class LoginBean
     {
         this.PASSWORD = PASSWORD;
     }
-    
 }

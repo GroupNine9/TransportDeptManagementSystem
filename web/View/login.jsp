@@ -7,20 +7,21 @@
         <link rel="stylesheet" href="style.css" >
     </head>
     <body>
-        <tr>
-                    <td><span style="color: red"><%=(request.getAttribute("errMessage") == null ) ? "" : request.getAttribute("errMessage") %> </span></td>
-                </tr>
+        
         <div class="box" >
             <h2>Egerton Transport System</h2>
             <form action="<%=request.getContextPath() %>/Login" method="post">
                 <div class="inputBox">
                     <input type="text" name="STAFFID" required="" >
-                    <label>Staff Id</label>
+                    <label>STAFF ID</label>
                 </div>
                 <div class="inputBox">
                     <input type="password" name="PASSWORD" required="" >
-                    <label>Password </label>
+                    <label>PASSWORD </label>
                 </div>
+                <tr>
+                 <td><span style="color: red"><%=(request.getAttribute("errMessage") == null ) ? "" : request.getAttribute("errMessage") %> </span></td>
+                </tr>
                 <input type="submit" name="login" value="Login" >
                 <br>
                 <input type="checkbox" style="margin: 20px 30px;" >Remember me
