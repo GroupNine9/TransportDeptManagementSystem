@@ -39,8 +39,9 @@ public class BookingServlet extends HttpServlet {
                 book.setDeparturedate(request.getParameter("departuredate"));
                 book.setReturndate(request.getParameter("returndate"));
                 book.setPassCount(request.getParameter("passCount"));               
-            
+                book.setTripName(request.getParameter("tripName"));  
                 book.setDuration(request.getParameter("duration"));
+                book.setDepartment(request.getParameter("department"));  
                 
 
                 book.BookVehicle();

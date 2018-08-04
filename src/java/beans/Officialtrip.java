@@ -17,37 +17,28 @@ import java.util.logging.Logger;
  *
  * @author HP-
  */
-public class Book {
-    private String destination,departuredate,returndate,passCount,duration,tripName,department;
+public class Officialtrip {
+    private String destination,departuredate,returndate,passCount,duration,purpose;
     
      
-    public Book(){
+    public Officialtrip(){
         destination="";
         departuredate="";
         returndate="";
         passCount="";
         duration="";
-        tripName="";
-        department="";
+        purpose="";
         
                
                         
     }
 
-    public String getTripName() {
-        return tripName;
+    public String getPurpose() {
+        return purpose;
     }
 
-    public void setTripName(String tripName) {
-        this.tripName = tripName;
-    }
-
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
+    public void setPurpose(String purpose) {
+        this.purpose = purpose;
     }
 
 
@@ -101,7 +92,7 @@ public class Book {
             MyDb dbconn=new MyDb();
             dbconn.getCon();
 
-            String sqlString="INSERT INTO pendingtrips (departure_date,return_date,passenger_count,duration,destination) VALUES ('"+destination+"','"+departuredate+"','"+returndate+"','"+passCount+"','"+duration+"')";
+            String sqlString="INSERT INTO pendingofficialtrip (destination,purpose,deration,number_of_passengers,return_date,departure_date) VALUES ('"+destination+"','"+purpose+"','"+duration+"','"+passCount+"','"+returndate+"','"+departuredate+"')";
             
             Statement myStatement = dbconn.con.createStatement();
             

@@ -31,6 +31,9 @@
 
            <label>Duration</label><input type="text" name="duration" value="<jsp:getProperty name="book" property="duration"/>">
 
+           <label>Department</label><input type="text" name="department" value="<jsp:getProperty name="book" property="department"/>">
+           
+           <label>Trip Name</label><input type="text" name="tripName" value="<jsp:getProperty name="book" property="tripName"/>">
 
         <input type="submit" value="submit"/>
         
