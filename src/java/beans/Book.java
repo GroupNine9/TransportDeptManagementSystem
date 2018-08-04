@@ -6,7 +6,6 @@
 package beans;
 
 
-import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.*;
 import Model.MyDb;
@@ -82,17 +81,17 @@ public class Book {
         try
         {    
             MyDb dbconn=new MyDb();
-            Connection myconnection= dbconn.Connection();
+            dbconn.getCon();
 
-            String sqlString="INSERT INTO pending trips (DEPARTURE DATE,RETURN DATE,PASSENGER COUNT,DURATION,DESTINATION) VALUES ('"+destination+"','"+departuredate+"','"+returndate+"','"+passCount+"','"+duration+"')";
+            String sqlString="INSERT INTO pendingtrips (departure_date,return_date,passenger_count,duration,destination) VALUES ('"+destination+"','"+departuredate+"','"+returndate+"','"+passCount+"','"+duration+"')";
             
-            Statement myStatement = myconnection.createStatement();
+            Statement myStatement = dbconn.con.createStatement();
             
             try
             {    
                 myStatement.executeUpdate(sqlString);
                 myStatement.close();
-                myconnection.close();
+                dbconn.con.close();
             } catch (SQLException ex) {Logger.getLogger(Book.class.getName()).log(Level.SEVERE, null, ex);}
         } catch (SQLException ex) {Logger.getLogger(Book.class.getName()).log(Level.SEVERE, null, ex);}  
     }

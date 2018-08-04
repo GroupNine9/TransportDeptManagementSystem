@@ -4,8 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/HP-/Documents/NetBeansProjects/TransportDeptManagementSystem/src/java/beans/Book.java</file>
-            <file>file:/C:/Users/HP-/Documents/NetBeansProjects/TransportDeptManagementSystem/src/java/Controller/booking.java</file>
-            <file>file:/C:/Users/HP-/Documents/NetBeansProjects/TransportDeptManagementSystem/web/booking.jsp</file>
+            <file>file:/C:/Users/HP-/Documents/NetBeansProjects/TransportDeptManagementSystem/src/java/Controller/BookingServlet.java</file>
+            <file>file:/C:/Users/HP-/Documents/NetBeansProjects/TransportDeptManagementSystem/web/View/booking.jsp</file>
+            <file>file:/C:/Users/HP-/Documents/NetBeansProjects/TransportDeptManagementSystem/web/WEB-INF/style.css</file>
+            <file>file:/C:/Users/HP-/Documents/NetBeansProjects/TransportDeptManagementSystem/web/WEB-INF/web.xml</file>
             <file>file:/C:/Users/HP-/Documents/NetBeansProjects/TransportDeptManagementSystem/src/java/Model/MyDb.java</file>
         </group>
     </open-files>
