@@ -15,6 +15,14 @@
         <servlet-name>ForgotPass</servlet-name>
         <servlet-class>Control.ForgotPass</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ViewReports</servlet-name>
+        <servlet-class>Control.ViewReports</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewReport</servlet-name>
+        <servlet-class>Control.ViewReport</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Home</servlet-name>
         <url-pattern>/Home</url-pattern>
@@ -34,6 +42,14 @@
     <servlet-mapping>
         <servlet-name>ForgotPass</servlet-name>
         <url-pattern>/ForgotPass</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewReports</servlet-name>
+        <url-pattern>/ViewReports</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewReport</servlet-name>
+        <url-pattern>/ViewReport</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

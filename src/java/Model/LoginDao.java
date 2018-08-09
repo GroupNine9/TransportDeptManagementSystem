@@ -17,14 +17,15 @@ import java.sql.Statement;
  */
 public class LoginDao 
 {
+                
      public String authenticateUser(LoginBean loginBean)
     {
+        MyDb db = new MyDb();
+        
         String STAFFID = loginBean.getStaffId();
         String PASSWORD = loginBean.getPassword();
         
-        //Calling class MyDb 
-        MyDb db = new MyDb();
-        
+
         String staffid = "";
         String password = "";
         String role = "";

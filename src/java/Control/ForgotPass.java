@@ -23,8 +23,10 @@ public class ForgotPass extends HttpServlet
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException 
     {
+        
         try
         {
+            
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/transportmanagement", "root", "");
 
@@ -41,7 +43,7 @@ public class ForgotPass extends HttpServlet
             if(!pass.equals(confirm))
             {
                 request.setAttribute("msg", "Passwords does not match");
-                getServletContext().getRequestDispatcher("/forgotpassword.jsp").forward(request, response);
+                getServletContext().getRequestDispatcher("/View/forgotpassword.jsp").forward(request, response);
             }
             else
             {
@@ -49,14 +51,14 @@ public class ForgotPass extends HttpServlet
                 if(i > 0)
             {
                 request.setAttribute("msg", "Password changed successfully");
-                getServletContext().getRequestDispatcher("/update.jsp").forward(request, response);
+                getServletContext().getRequestDispatcher("/View/update.jsp").forward(request, response);
                 //response.sendRedirect("update.jsp");
                 
             }
             else
             {
                 System.out.println("Error in changing password..Try Again");
-                response.sendRedirect("forgotpassword.jsp");
+                response.sendRedirect("/View/forgotpassword.jsp");
             }
                 
             }         
