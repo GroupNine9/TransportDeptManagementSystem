@@ -1,14 +1,11 @@
 package datasource;
 
-import Model.Staff;
 import Model.User;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.PostConstruct;
@@ -55,7 +52,8 @@ public class DataSource {
             LOGGER.log(Level.SEVERE, "Error occurred while closing database connection");
         }
     }
-
+    
+    /*
     public ArrayList<Staff> findAllStaff() {
 
         ArrayList<Staff> allStaff = null;
@@ -84,19 +82,19 @@ public class DataSource {
                 try {
                     resultSet.close();
                 } catch (SQLException exception) {
-                    /*do nothing*/
+                    //do nothing
                 }
             }
             if (statement != null) {
                 try {
                     statement.close();
                 } catch (SQLException exception) {
-                    /*do nothing*/
+                    //do nothing
                 }
             }
         }
         return allStaff;
-    }
+    }*/
 
     public void createUser(User newUser) {
 
@@ -125,7 +123,8 @@ public class DataSource {
             }
         }
     }
-
+    
+    /*
     public void createStaff(Staff staff) {
 
         PreparedStatement preparedStatement = null;
@@ -152,11 +151,11 @@ public class DataSource {
             if (preparedStatement != null) {
                 try {
                     preparedStatement.close();
-                } catch (SQLException exception) {/*do nothing*/
+                } catch (SQLException exception) {}//do nothing
                 }
             }
         }
-    }
+    }*/
 
     public User authenticate(String emailAddr, String pwd) {
 
