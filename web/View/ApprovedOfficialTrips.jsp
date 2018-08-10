@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : Jul 30, 2018, 3:29:09 PM
+    Document   : ApprovedOfficialTrips
+    Created on : Aug 6, 2018, 1:39:01 PM
     Author     : Grace
 --%>
 
@@ -12,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <a href="Home.jsp" >Home</a>
+        <h1>Hello World!</h1>
     </body>
 </html>

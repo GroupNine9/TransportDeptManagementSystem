@@ -3,7 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
+=======
+            <file>file:/C:/Users/GraceTina/Documents/NetBeansProjects/TransportDeptManagementSystem/src/java/Model/TripReport.java</file>
+            <file>file:/C:/Users/GraceTina/Documents/NetBeansProjects/TransportDeptManagementSystem/src/java/Model/MyDb.java</file>
+>>>>>>> origin/GraceMuchuki
             <file>file:/C:/Users/GraceTina/Documents/NetBeansProjects/TransportDeptManagementSystem/src/java/datasource/DataSource.java</file>
+<<<<<<< HEAD
+=======
+            <file>file:/C:/Users/GraceTina/Documents/NetBeansProjects/TransportDeptManagementSystem/src/java/Model/Staff.java</file>
+            <file>file:/C:/Users/GraceTina/Documents/NetBeansProjects/TransportDeptManagementSystem/web/WEB-INF/jsp/driver/driverreport.jsp</file>
+            <file>file:/C:/Users/GraceTina/Documents/NetBeansProjects/TransportDeptManagementSystem/src/java/Model/User.java</file>
+>>>>>>> origin/GraceMuchuki
             <file>file:/C:/Users/GraceTina/Documents/NetBeansProjects/TransportDeptManagementSystem/src/java/Control/TransportOfficerHome.java</file>
         </group>
     </open-files>
