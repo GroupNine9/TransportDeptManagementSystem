@@ -1,14 +1,17 @@
-
+<%-- 
+    Document   : drivers
+    Created on : Aug 3, 2018, 12:47:10 PM
+    Author     : GraceTina
+--%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>HOME</title>
+        <title>JSP Page</title>
     </head>
     <body>
-        <a href="/TransportManagementSystem/staff/register">Register Staff</a>
+        <h1>Hello World!</h1>
     </body>
 </html>

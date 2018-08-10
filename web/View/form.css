@@ -1,0 +1,90 @@
+
+* {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.dropdown{
+    width: 50%;
+    color: green;
+    font-family: sans-serif; 
+}
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: green;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 90%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid green;
+}
+
+/* Set a style for the submit button */
+.btn, .a{
+  background-color: green;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 97%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: green;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 400px;
+  margin-right: 250px;
+  margin-top: 50px;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+.text{
+    color: green;
+}
