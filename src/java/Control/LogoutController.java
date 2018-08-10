@@ -34,7 +34,7 @@ public class LogoutController extends HttpServlet {
         request.getSession(true).removeAttribute("user");
         request.removeAttribute("user");
         // go back to login page
-        response.sendRedirect("/");
+        response.sendRedirect("/login");
     }
 
     /**

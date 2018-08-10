@@ -31,7 +31,7 @@ public class IndexJspController extends HttpServlet {
 
         if (loggedInUser == null) {
             getServletContext()
-                    .getRequestDispatcher("/WEB-INF/jsp/testlogin.jsp")
+                    .getRequestDispatcher("/WEB-INF/jsp/driver/driverreport.jsp")
                     .forward(request, response);
         } else {
             getServletContext()

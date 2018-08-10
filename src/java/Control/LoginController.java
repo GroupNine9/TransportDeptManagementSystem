@@ -25,6 +25,15 @@ public class LoginController extends HttpServlet {
     @EJB
     private DataSource dataSource;
 
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+        getServletContext()
+                .getRequestDispatcher("/WEB-INF/jsp/testlogin.jsp")
+                .forward(request, response);
+    }
+
     /**
      * Handles the HTTP <code>POST</code> method.
      *
