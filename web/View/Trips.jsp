@@ -8,9 +8,11 @@
     </head>
     <body>
         <div class="sidenav">
-            <a href="managementback.jsp">HOME</a>
-            <a href="RegisterVStaff.jsp">REGISTER STAFF</a>
-            <a href="RegisterVehicle.jsp">REGISTER VEHICLE</a>
+             <a href="View/RegisterStaff.jsp">REGISTER STAFF</a>
+        <a href="View/RegisterVehicle.jsp">REGISTER VEHICLE</a>
+        <a href="View/managementback.jsp">HOME</a>
+        <a href="View/Trips.jsp">VIEW REPORTS</a>
+        <a href="View/Trips.jsp">ASSIGN TASKS</a>
         </div>
         
         <div class="main">
