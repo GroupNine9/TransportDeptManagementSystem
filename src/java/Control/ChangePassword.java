@@ -36,17 +36,17 @@ public class ChangePassword extends HttpServlet
         if(currentpass.equals("") || newpass.equals("") || confirmpass.equals(""))
         {
             request.setAttribute("msg", "All fields are required");
-            getServletContext().getRequestDispatcher("/changepassword.jsp").forward(request, response);
+            getServletContext().getRequestDispatcher("changepassword.jsp").forward(request, response);
         }
         else if(!newpass.equals(confirmpass))
         {
             request.setAttribute("msg", "Passwords does not match");
-            getServletContext().getRequestDispatcher("/changepassword.jsp").forward(request, response);
+            getServletContext().getRequestDispatcher("changepassword.jsp").forward(request, response);
         }
         else if(!cpass.equals(currentpass))
         {
             request.setAttribute("msg", "Old password is not correct");
-            getServletContext().getRequestDispatcher("/changepassword.jsp").forward(request, response);
+            getServletContext().getRequestDispatcher("changepassword.jsp").forward(request, response);
         }
         else
         {
@@ -67,7 +67,7 @@ public class ChangePassword extends HttpServlet
             else
             {
                 request.setAttribute("msg", "Password not changed. Try after some time...");
-                getServletContext().getRequestDispatcher("/changepassword.jsp").forward(request, response);
+                getServletContext().getRequestDispatcher("changepassword.jsp").forward(request, response);
             }
         } 
     }

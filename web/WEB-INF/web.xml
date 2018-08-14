@@ -23,6 +23,30 @@
         <servlet-name>ViewReport</servlet-name>
         <servlet-class>Control.ViewReport</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RegisterStaffServelet</servlet-name>
+        <servlet-class>Control.RegisterStaffServelet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterVehicleServelet</servlet-name>
+        <servlet-class>Control.RegisterVehicleServelet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DriverHome</servlet-name>
+        <servlet-class>Control.DriverHome</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutController</servlet-name>
+        <servlet-class>Control.LogoutController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MaintenanceController</servlet-name>
+        <servlet-class>Control.MaintenanceController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MechanicHome</servlet-name>
+        <servlet-class>Control.MechanicHome</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Home</servlet-name>
         <url-pattern>/Home</url-pattern>
@@ -50,6 +74,30 @@
     <servlet-mapping>
         <servlet-name>ViewReport</servlet-name>
         <url-pattern>/ViewReport</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterStaffServelet</servlet-name>
+        <url-pattern>/RegisterStaffServelet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterVehicleServelet</servlet-name>
+        <url-pattern>/RegisterVehicleServelet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DriverHome</servlet-name>
+        <url-pattern>/DriverHome</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MechanicHome</servlet-name>
+        <url-pattern>/MechanicHome</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MaintenanceController</servlet-name>
+        <url-pattern>/MaintenanceController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutController</servlet-name>
+        <url-pattern>/LogoutController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

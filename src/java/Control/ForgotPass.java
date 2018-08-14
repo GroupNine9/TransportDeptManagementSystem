@@ -43,22 +43,22 @@ public class ForgotPass extends HttpServlet
             if(!pass.equals(confirm))
             {
                 request.setAttribute("msg", "Passwords does not match");
-                getServletContext().getRequestDispatcher("/View/forgotpassword.jsp").forward(request, response);
+                getServletContext().getRequestDispatcher("forgotpassword.jsp").forward(request, response);
             }
             else
             {
                 
                 if(i > 0)
             {
-                request.setAttribute("msg", "Password changed successfully");
-                getServletContext().getRequestDispatcher("/View/update.jsp").forward(request, response);
+                request.setAttribute("msg", "Password changed successfully.");
+                getServletContext().getRequestDispatcher("update.jsp").forward(request, response);
                 //response.sendRedirect("update.jsp");
                 
             }
             else
             {
                 System.out.println("Error in changing password..Try Again");
-                response.sendRedirect("/View/forgotpassword.jsp");
+                response.sendRedirect("forgotpassword.jsp");
             }
                 
             }         

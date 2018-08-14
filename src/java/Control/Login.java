@@ -11,7 +11,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-
+/**
+ *
+ * @author Barno
+ */
 
 @WebServlet(name = "Login", urlPatterns = {"/Login"})
 public class Login extends HttpServlet
@@ -54,7 +57,7 @@ public class Login extends HttpServlet
                 session.setAttribute("Driver", STAFFID);
                 request.setAttribute("STAFFID", STAFFID);
                 
-                request.getRequestDispatcher("/View/Home.jsp").forward(request, response);
+                request.getRequestDispatcher("driverdashboard.jsp").forward(request, response);
             }
             else if(userValidate.equals("School Official"))
             {
@@ -64,7 +67,7 @@ public class Login extends HttpServlet
                 session.setAttribute("School Official", STAFFID);
                 request.setAttribute("STAFFID", STAFFID);
                 
-                request.getRequestDispatcher("/View/booking.jsp").forward(request, response);
+                request.getRequestDispatcher("booking.jsp").forward(request, response);
             }
             else if(userValidate.equals("TT Secretary"))
             {
@@ -74,7 +77,7 @@ public class Login extends HttpServlet
                 session.setAttribute("TT Secretary", STAFFID);
                 request.setAttribute("STAFFID", STAFFID);
                 
-                request.getRequestDispatcher("/View/Home.jsp").forward(request, response);
+                request.getRequestDispatcher("Home.jsp").forward(request, response);
             }
             else if(userValidate.equals("Mechanic"))
             {
@@ -85,7 +88,7 @@ public class Login extends HttpServlet
                 session.setAttribute("Mechanic", STAFFID);
                 request.setAttribute("STAFFID", STAFFID);
                 
-                request.getRequestDispatcher("/View/Home.jsp").forward(request, response);
+                request.getRequestDispatcher("mechanicdashboard.jsp").forward(request, response);
             }
             else
             {

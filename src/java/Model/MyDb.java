@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class MyDb {
-    Connection con;
+    public Connection con;
     String driverName = "com.mysql.jdbc.Driver";
     String connectionURL = "jdbc:mysql://localhost:3306/transportmanagement?";
     String username = "root";

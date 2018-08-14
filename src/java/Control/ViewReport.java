@@ -6,7 +6,6 @@
 package Control;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.*;
 import java.util.*;
 import javax.servlet.RequestDispatcher;
@@ -21,18 +20,16 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class ViewReport extends HttpServlet 
 {
-    String page = "/View/machanicreport.jsp";
+    String page = "mechanicreport.jsp";
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException 
     {
-        PrintWriter out = response.getWriter();
-        
         String url = "jdbc:mysql://localhost:3306/transportmanagement";
         
         Connection con;
         ResultSet rs;
-        
+
         response.setContentType("text/html");
         
         List list = new ArrayList();

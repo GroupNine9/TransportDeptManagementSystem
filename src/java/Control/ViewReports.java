@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
 public class ViewReports extends HttpServlet 
 {
     
-    String page = "/View/viewreports.jsp";
+    String page = "viewreports.jsp";
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException 
