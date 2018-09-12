@@ -5,43 +5,37 @@ package Beans;
 import java.sql.SQLException;
 import java.sql.*;
 import Model.MyDb;
-import java.time.temporal.ChronoUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-public class Book {
-    private String destination,departuredate,returndate,passCount,tripName,department;
+public class Officialtrip {
+    private String purpose,destination,departuredate,returndate,duration,passCount;
     
      
-    public Book(){
+    public Officialtrip(){
+       
+        purpose="";
         destination="";
         departuredate="";
         returndate="";
         passCount="";
-        tripName="";
-        department="";
+      
+       
+        
         
                
                         
     }
 
-
-    public String getTripName() {
-        return tripName;
+    public String getPurpose() {
+        return purpose;
     }
 
-    public void setTripName(String tripName) {
-        this.tripName = tripName;
+    public void setPurpose(String purpose) {
+        this.purpose = purpose;
     }
 
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
 
 
     public String getPassCount() {
@@ -51,7 +45,7 @@ public class Book {
     public void setPassCount(String passCount) {
         this.passCount = passCount;
     }
-
+   
     public String getDestination() {
         return destination;
     }
@@ -79,14 +73,14 @@ public class Book {
     
     
     //
-    public void BookVehicle()
+    public void OfficialtripVehicle()
     {
         try
         {    
             MyDb dbconn=new MyDb();
             dbconn.getCon();
 
-            String sqlString="INSERT INTO pendingacademic (TripName,Destination,DepartureDate,ReturnDate,PassengerNumber,Department) VALUES ('"+tripName+"','"+destination+"','"+departuredate+"','"+returndate+"','"+passCount+"','"+department+"')";
+            String sqlString="INSERT INTO pendingofficial (Purpose,Destination,DepartureDate,ReturnDate,PassengerNumber) VALUES ('"+purpose+"','"+destination+"','"+departuredate+"','"+returndate+"','"+passCount+"')";
             
             Statement myStatement = dbconn.con.createStatement();
             
@@ -95,13 +89,9 @@ public class Book {
                 myStatement.executeUpdate(sqlString);
                 myStatement.close();
                 dbconn.con.close();
-            } catch (SQLException ex) {Logger.getLogger(Book.class.getName()).log(Level.SEVERE, null, ex);}
-        } catch (SQLException ex) {Logger.getLogger(Book.class.getName()).log(Level.SEVERE, null, ex);}  
+            } catch (SQLException ex) {Logger.getLogger(Officialtrip.class.getName()).log(Level.SEVERE, null, ex);}
+        } catch (SQLException ex) {Logger.getLogger(Officialtrip.class.getName()).log(Level.SEVERE, null, ex);}  
+        
         
     }
-    
-    
-    
-    
-    
 }
