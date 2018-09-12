@@ -1,0 +1,113 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 1, 2018, 2:39:34 PM
+    Author     : Grace
+*/
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 17%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: green;
+  overflow-x: hidden;
+  padding-top: 15px;
+}
+  .sidenav a{
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      margin-bottom: 5px;
+  }
+  .sidenav a:hover{
+       background: black;
+          border-left: 5px solid greenyellow;
+          padding: 15px 30px 15px 25px;
+  }
+  
+  .sidenav a:active{
+          background: #003300;
+          border-left: 5px solid greenyellow;
+          padding: 15px 30px 15px 25px;
+  }
+  .sidenav .fa{
+      color: white;
+      margin-bottom: 5px;
+      font-size: 1.0rem;
+      margin-right: 0.8rem;
+      display: inline-block;
+      width: 30px;
+      position: relative;
+      top: 2px;
+  }
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+body{
+        background:#fff;
+	font-family: 'Raleway', sans-serif;
+}
+.main-section{
+	width:75%;
+	margin-left: 200px; 
+	text-align: center;
+        background-color:#fff;
+	padding: 0px 5px;
+}
+.dashbord{
+	width:30%;
+	display: inline-block;
+	background-color:#A9A9A9;
+	color:black;
+	text-transform: capitalize;
+	margin-top: 50px; 
+
+}
+
+.icon-section{
+	height: 150px;
+}
+.icon-section i{
+	font-size: 30px;
+	padding:10px;
+	border:1px solid #fff;
+	border-radius:80%;
+	margin-top:-35px;
+	margin-bottom: 20px;
+	background-color:white;
+}
+.icon-section p{
+	margin:0px;
+	font-size: 20px;
+	padding-bottom: 10px;
+	padding-top: 20px;
+        font-family: monospace;
+}
+.detail-section{
+	background-color: green;
+	padding: 5px 0px;
+	color: white;
+	width:100%;
+}
+.dashbord .detail-section:hover{
+	background-color: #5a5a5a;
+	cursor: pointer;
+}
+.detail-section a{
+	color:#fff;
+	text-decoration: none;
+}
+

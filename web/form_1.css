@@ -1,0 +1,449 @@
+
+* {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.dropdown{
+    width: 50%;
+    color: green;
+    font-family: sans-serif; 
+}
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: green;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 90%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid green;
+}
+
+/* Set a style for the submit button */
+.btn, .a{
+  background-color: green;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 97%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: green;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+ol,ul{
+    list-style: none;  
+}
+.mainMenu{
+    margin: 10px;
+    width: 900px;
+    font-family: sans-serif;
+}
+    .mainMenu li{
+        display: block;
+        width: 120px;
+        float: left;
+        margin-left: 2px;
+        border: 1px solid black;
+    }
+    .mainMenu a{
+        display: block;
+        padding: 3px;
+        text-decoration: none;
+        background-color: white;
+        color: green;
+    }
+    .mainMenu a:hover{
+        background-color: green;
+        color: white;
+    }
+.main {
+  margin-left: 400px;
+  margin-right: 250px;
+  margin-top: 50px;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+.text{
+    color: green;
+}
+.dropdown p select{
+    background-color: green;
+    border: 1px green;
+    padding: 5px 5px 5px 5px;
+    width: 200px;
+    margin-left: 50px;
+}
+.btnsmall{
+     background-color: green;
+     color: white;
+     width: 200px;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+}
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: green;
+  overflow-x: hidden;
+  padding-top: 15px;
+  .fa{
+      color: white;
+      margin-bottom: 5px;
+      font-size: 1.0rem;
+      margin-right: 0.8rem;
+      display: inline-block;
+      width: 30px;
+      position: relative;
+      top: 2px;
+  }
+}
+.sidenav a{
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      margin-bottom: 5px;
+  }
+.sidenav a:hover{
+       background: black;
+          border-left: 5px solid greenyellow;
+          padding: 15px 30px 15px 25px;
+  }
+  
+.sidenav a:active{
+          background: #003300;
+          border-left: 5px solid greenyellow;
+          padding: 15px 30px 15px 25px;
+        
+}         
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+body{
+        background:#fff;
+	font-family: 'Raleway', sans-serif;
+}
+.main{
+	width:75%;
+	margin-left: 200px; 
+	text-align: center;
+        background-color:#fff;
+	padding: 0px 5px;
+        margin-top: 50px;
+}
+.main-section{
+	width:75%;
+	margin-left: 320px; 
+	text-align: center;
+        background-color:#fff;
+	padding: 0px 5px;
+        .fa{
+            margin-right: 0px;
+            margin-left: 50px;
+        }
+}
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 800px;
+  margin-bottom: 15px;
+  margin-left: 250px;
+}
+.dropdown{
+    width: 50%;
+    color: green;
+    font-family: sans-serif; 
+}
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: green;
+  color: white;
+  width: 10%;
+  text-align: center;
+  border-radius: 0%;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 80%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 0%;
+}
+
+.input-field:focus {
+  border: 2px solid green;
+}
+
+/* Set a style for the submit button */
+.btn, .a{
+  background-color: green;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 96%;
+  opacity: 0.9;
+  margin-left: 2px;
+}
+.btnred{
+  background-color: red;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 96%;
+  opacity: 0.9;
+  margin-left: 2px;
+}
+.btn:hover {
+  opacity: 1;
+}
+
+
+.text{
+    color: green;
+}
+.dropdowndriver select{
+    background-color: green;
+    border: 1px green;
+    padding: 5px 5px 5px 5px;
+    width: 350px;
+    margin-left: 50px;
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+}
+.dropdownvehicle select{
+    background-color: green;
+    border: 1px green;
+    padding: 5px 5px 5px 5px;
+    width: 350px;
+    margin-left: 42px;
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+
+
+}
+.dropdownvehicle p{
+    color: black;
+    font-size: 20px;
+}
+.dropdowndriver p{
+    color: black;
+    font-size: 20px;
+}
+.btnsmall{
+     background-color: green;
+     color: white;
+     width: 90%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 30px;
+     margin-top: 100px;
+}
+.btnsmallcancel{
+    background-color: red;
+     color: white;
+     width: 90%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 30px;
+     margin-top: 10px;
+}
+.btnsmallcanceltbl{
+    background-color: red;
+     color: white;
+     width: 50%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 10px;
+     margin-top: 5px;
+     height: 25px;
+}
+.btnsmalltbl{
+     background-color: green;
+     color: white;
+     width: 50%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 2px;
+     margin-top: 5px;
+     height: 25px;
+
+}
+.btnsmallback{
+     background-color: buttonface;
+     color: black;
+     width: 90%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 30px;
+     margin-top: 10px;
+}
+.btnsmallbacko{
+     background-color: buttonface;
+     color: black;
+     width: 90%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 30px;
+     margin-top: 2px;
+}
+.btnsmallo{
+     background-color: green;
+     color: black;
+     width: 90%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 30px;
+     margin-top: 20px;
+}
+.btnsmallbackac{
+     background-color: buttonface;
+     color: black;
+     width: 90%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 30px;
+     margin-top: 20px;
+}
+.btnsmallac{
+     background-color: green;
+     color: black;
+     width: 90%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 30px;
+     margin-top: 20px;
+}
+
+textarea{
+    width: 90%;
+    border: solid green 1px;
+    padding: 15px 20px;
+    height: 200px;
+    margin-left: 30px;
+
+}
+.btnsmall3{
+     background-color: buttonface;
+     color: black;
+     width: 90%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 30px;
+     margin-top: 10px;
+}
+.DetailSection{
+    float:left;
+    width: 40%;
+    padding: 5px;
+    border: solid green 1px;
+    margin-left: 100px;
+    padding-right: 10px;
+    margin-top: 40px;
+    height: 500px;
+}
+.approvesection{
+    float:left;
+    width: 40%;
+    border: solid green 1px;
+    margin-left: 30px;
+    padding: 5px;
+    margin-top: 40px;
+    height: 500px;
+
+}
+.approvesectionofficial{
+    float:left;
+    width: 40%;
+    border: solid green 1px;
+    margin-left: 420px;
+    padding: 5px;
+    margin-top: 40px;
+    height: 550px;
+
+}
+.approvesection p{
+    
+    color: green;
+    font-size: 20px;
+    margin-left: 30px;
+
+}
+
+

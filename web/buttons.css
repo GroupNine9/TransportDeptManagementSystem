@@ -1,0 +1,256 @@
+
+.btn{
+  background-color: green;
+  color: white;
+  vertical-align: central;
+  border: none;
+  cursor: pointer;
+  height: 20px;
+ }
+ .btnview{
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 14%;
+  font-size: 20px;
+  margin-top: 20px;
+ }
+ .tbldeets{
+    float:left;
+    width: 80%;
+    padding: 5px;
+    margin-left: 20px;
+ }
+ .tblbtn{
+    float:right;
+    width: 15%;
+    padding: 5px;
+    margin-left: 30px;
+ }
+ .tbldeets2{
+     width: 90%;
+    padding: 5px;
+    margin-left: 100px;
+ }
+ .tblbtna{
+     width: 45%;
+     background-color: green;
+     color: white;
+ }
+ .tblbtnaa{
+     width: 100%;
+     background-color: green;
+     color: white;
+ }
+ .tblcancel{
+     width: 45%;
+     background-color: red;
+     color: white;
+ }
+.btnred{
+  background-color: red;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 96%;
+  opacity: 0.9;
+  margin-left: 2px;
+}
+.tblbtna{
+     width: 48%;
+     background-color: green;
+     color: white;
+ }
+ .tblbtnaa{
+     width: 100%;
+     background-color: green;
+     color: white;
+ }
+ .tblcancel{
+     width: 45%;
+     background-color: red;
+     color: white;
+ }
+ .dropdowndriver select{
+    background-color: green;
+    border: 1px green;
+    padding: 5px 5px 5px 5px;
+    width: 350px;
+    margin-left: 50px;
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+}
+ .dropdownvehicle select{
+    background-color: green;
+    border: 1px green;
+    padding: 5px 5px 5px 5px;
+    width: 350px;
+    margin-left: 42px;
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+
+
+}
+.dropdownvehicle p{
+    color: black;
+    font-size: 20px;
+}
+.dropdowndriver p{
+    color: black;
+    font-size: 20px;
+}
+.btnsmall{
+     background-color: green;
+     color: white;
+     width: 90%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 30px;
+     margin-top: 100px;
+}
+.btnsmallcancel{
+    background-color: red;
+     color: white;
+     width: 90%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 30px;
+     margin-top: 10px;
+}
+.btnsmallcanceltbl{
+    background-color: red;
+     color: white;
+     width: 50%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 10px;
+     margin-top: 5px;
+     height: 25px;
+}
+.btnsmalltbl{
+     background-color: green;
+     color: white;
+     width: 50%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 2px;
+     margin-top: 5px;
+     height: 25px;
+
+}
+.btnsmallback{
+     background-color: buttonface;
+     color: black;
+     width: 90%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 30px;
+     margin-top: 10px;
+}
+.btnsmallbacko{
+     background-color: buttonface;
+     color: black;
+     width: 90%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 30px;
+     margin-top: 2px;
+}
+.btnsmallo{
+     background-color: green;
+     color: black;
+     width: 90%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 30px;
+     margin-top: 20px;
+}
+.btnsmallbackac{
+     background-color: buttonface;
+     color: black;
+     width: 90%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 30px;
+     margin-top: 20px;
+}
+.btnsmallac{
+     background-color: green;
+     color: black;
+     width: 90%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 30px;
+     margin-top: 20px;
+}
+
+textarea{
+    width: 90%;
+    border: solid green 1px;
+    padding: 15px 20px;
+    height: 200px;
+    margin-left: 30px;
+
+}
+.btnsmall3{
+     background-color: buttonface;
+     color: black;
+     width: 90%;
+     padding: 15px 20px;
+     border: none;
+     cursor: pointer;
+     margin-left: 30px;
+     margin-top: 10px;
+}
+.DetailSection{
+    float:left;
+    width: 40%;
+    padding: 5px;
+    border: solid green 1px;
+    margin-left: 100px;
+    padding-right: 10px;
+    margin-top: 40px;
+    height: 500px;
+}
+.approvesection{
+    float:left;
+    width: 40%;
+    border: solid green 1px;
+    margin-left: 30px;
+    padding: 5px;
+    margin-top: 40px;
+    height: 500px;
+
+}
+.approvesectionofficial{
+    float:left;
+    width: 40%;
+    border: solid green 1px;
+    margin-left: 420px;
+    padding: 5px;
+    margin-top: 40px;
+    height: 550px;
+
+}
+.approvesection p{
+    
+    color: green;
+    font-size: 20px;
+    margin-left: 30px;
+
+}
